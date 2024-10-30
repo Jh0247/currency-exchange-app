@@ -1,0 +1,141 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 5%;
+  width: 100%;
+  min-height: 200px;
+  min-width: 50vw;
+}
+
+.count-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.mr-3 {
+  margin-right: 3px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  margin: 10px 0;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3c45e9;
+}
+
+select, input {
+  margin: 10px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.icon {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  fill: white !important;
+}
+
+@media (max-width: 1024px) {
+  .chart-container, .calculator-container {
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .calculator-container {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  select, input {
+    padding: 10px;
+  }
+}
